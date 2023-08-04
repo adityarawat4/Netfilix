@@ -1,0 +1,305 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: black;
+    position: relative;
+}
+
+/* navigation section------------------------------------------------------------ */
+nav {
+    position: relative;
+    background: transparent;
+}
+.navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navi .searchbar i {
+    color: white;
+}
+.logo img {
+    width: 100px;
+}
+.search input {
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 200px;
+    height: 20px;
+    padding: 3px;
+    color: white;
+}
+.search {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 3px 5px;
+    margin: 3px 0px;
+}
+.search-xs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search-xs i {
+    display: none;
+}
+.search-xs .bell:hover {
+    color: rgb(203, 16, 16);
+    transition: 0.2s;
+}
+.search-xs .bell {
+    display: block;
+    color: white;
+    margin-right: 12px;
+    font-size: 18px;
+}
+.search-xs img {
+    border-radius: 50%;
+    width: 30px;
+}
+
+
+/* main movie poster----------------------------------------------------- */
+.trend-movie-poster {
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} 
+.movie-poster-content {
+    color: white;
+    width: 500px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.movie-poster-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.movie-poster-content i {
+    color: rgb(222, 162, 11);
+    font-size: 18px;
+    margin-right: 5px;
+}
+.movie-poster-content p{
+    font-size: 17px;
+    margin-right: 5px;
+}
+.movie-poster-content i span {
+    color: rgb(204, 203, 200);
+    font-family: poppins;
+    font-size: 24px;
+}
+.movie-poster-content .bt {
+    width: 130px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 20px;
+    margin-right: 40px;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+
+}
+.movie-poster-content .bt i {
+    color: rgb(203, 16, 16);
+    font-size: 15px;
+    margin-right: 5px;   
+}
+.movie-poster-content .bt:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    transition: 0.3s;
+}
+
+.owl-theme .owl-dots{
+    display: none;
+}
+.movie-tittle{
+    font-size: 20px;
+    color: white;
+}
+.recent-movie{
+    cursor: pointer;
+    background: transparent;
+}
+.trending-movie{
+    width: 120px;
+    height: 160px;
+    background: transparent;
+    cursor: pointer;
+
+}
+.trending-movie .card{
+    border-radius: 8px;
+}
+.trending-movie .card img {
+    width: 120px;
+    height: 160px;
+    border-radius: 5px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    display: none;
+}
+.owl-theme .owl-nav {
+    display: none;
+}
+
+.main-video .video-top{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left,transparent,#000);
+}
+.main-video {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.361),rgba(0, 0, 0, 0.361));
+}
+.main-video video {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+.main-video-content {
+    position: absolute;
+}
+
+.login-popup{
+    position: absolute;
+    width: 300px;
+    background: #313131;
+    top: 150px;
+    left: 500px;
+    padding: 30px ;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    display: none;
+}
+.login-popup p{
+    color: white;
+    font-size: 14px;
+    font-weight:200;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -1px;
+}
+.login-popup input{
+    width: 100%;
+    outline: none;
+    background:transparent;
+    color: white;
+    border: none;
+    border: 1px solid rgb(97, 97, 97);
+    padding: 8px 8px;
+    border-radius: 5px;
+    margin-top: 3px;  
+    font-size: 12px; 
+    margin-bottom: 10px;
+}
+.login-popup ::-webkit-input-placeholder{
+    font-size: 15px;
+    color: rgb(105, 103, 103);
+}
+
+.login-popup .login{
+    outline: none;
+    background:rgb(190, 39, 39);
+    color:white;
+    border: none;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-top: 5px;   
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.login-popup .login:hover{
+    background: transparent;
+    border:  1px solid rgb(206, 29, 29);
+}
+.sign-up{
+    text-align: center;
+}
+.login-popup .forget-pswd{
+    font-size: 12px;
+    text-decoration: none;
+    color: #90888b;
+}
+.login-popup h2{
+    margin: 5px 0px;
+    font-size: 18px;
+    color: rgb(105, 103, 103);
+}
+
+.close-popup{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 17px;
+}
+
+* footer-------------------------------------------  */
+
+
+footer{
+    color:rgb(99, 99, 99)
+}
+footer a{
+    color:rgb(99, 99, 99)
+}
+footer a:hover{
+    color: white;
+}
+.netflix-dropdown-box{
+   
+}
+.netflix-dropdown{
+    color:white;
+    padding: 4px 5px;
+    border: 1px solid white;
+    outline: none;
+    background:black;
+}
+.netflix-dropdown-box .dropdown-menu{
+    background: rgb(0, 0, 0);
+    color:white;
+    border-bottom: 3px solid white;
+}
+.netflix-dropdown-box .dropdown-menu .dropdown-item{
+    color: white;
+    text-align: center;
+    width: 200px;
+    padding:10px 20px;
+    background: black;
+}
+.netflix-dropdown-box .dropdown-menu .dropdown-item:hover{
+    color: white;
+    background: rgba(255, 255, 255, 0.111);
+}
+
+/* coustom scrol bar */
+
+::-webkit-scrollbar{
+    width:7px;
+}
+::-webkit-scrollbar-track{
+    background:#846b73;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(71, 14, 14),rgb(190, 39, 39));
+    border-radius:8px;
+}

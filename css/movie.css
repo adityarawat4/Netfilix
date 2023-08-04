@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: black;
+}
+.video video{
+    width: 100%;
+    height: 70vh;
+}
+.movie-tittle{
+    width: auto;
+    color:rgb(179, 179, 179);
+}
+.movie-tittle i{
+    color: rgb(222, 162, 11);
+     font-size: 18px;
+}
+.movie-feature i{
+    color: rgb(58, 87, 112);
+}
+.movie-feature i:hover{
+    color: rgb(203, 16, 16);
+}
+
+/* footer-------------------------------------------  */
+
+footer{
+    color:rgb(99, 99, 99)
+}
+footer a{
+    color:rgb(99, 99, 99)
+}
+footer a:hover{
+    color: white;
+}
+.netflix-dropdown-box{
+   
+}
+.netflix-dropdown{
+    color:white;
+    padding: 4px 5px;
+    border: 1px solid white;
+    outline: none;
+    background:black;
+}
+.netflix-dropdown-box .dropdown-menu{
+    background: rgb(0, 0, 0);
+    color:white;
+    border-bottom: 3px solid white;
+}
+.netflix-dropdown-box .dropdown-menu .dropdown-item{
+    color: white;
+    text-align: center;
+    width: 200px;
+    padding:10px 20px;
+    background: black;
+}
+.netflix-dropdown-box .dropdown-menu .dropdown-item:hover{
+    color: white;
+    background: rgba(255, 255, 255, 0.111);
+}
